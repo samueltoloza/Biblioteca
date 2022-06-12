@@ -41,6 +41,7 @@
             <th scope="col">NOMBRE</th>
             <th scope="col">APELLIDOS</th>
             <th scope="col">FECHA DE NACIMIENTO</th>
+            <th scope="col">ID LIBRO</th>
             <th scope="col">ACCION</th>
           </tr>
         </thead>
@@ -50,6 +51,7 @@
             <td th:text="${usuario.nombre}"></td>
             <td th:text="${usuario.apellido}"></td>
             <td th:text="${usuario.fechaNacimiento}"></td>
+            <td th:text="${usuario.idlibro}"></td>
             <td>
               <a class="btn btn-primary" th:href="@{'/editar/' + ${usuario.id}}">Editar</a>
               &nbsp;

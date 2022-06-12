@@ -22,16 +22,18 @@ public class Usuario {
     private String apellido;
     @Column(nullable = false, length = 12)
     private String fechaNacimiento;
+    private int idlibro;
 
     public Usuario() {
        
     }
 
-    public Usuario(int id, String nombre, String apellido, String fechaNacimiento) {
+    public Usuario(int id, String nombre, String apellido, String fechaNacimiento, int idlibro) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
+        this.idlibro = idlibro;
     }
 
     public int getId() {
@@ -58,5 +60,12 @@ public class Usuario {
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+    public int getIdlibro() {
+        return idlibro;
+    }
+    public void setIdlibro(int idlibro) {
+        this.idlibro = idlibro;
+    }
+    
 
 }
