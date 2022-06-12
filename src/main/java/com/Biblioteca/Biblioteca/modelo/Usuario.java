@@ -16,9 +16,11 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private int id;
-    
+    @Column(nullable = false, length = 20)
     private String nombre;
+    @Column(nullable = false, length = 20)
     private String apellido;
+    @Column(nullable = false, length = 12)
     private String fechaNacimiento;
 
     public Usuario() {
